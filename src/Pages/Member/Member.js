@@ -1,10 +1,12 @@
 import React from "react";
-import { View , Text } from "react-native";
+import { View , Text, Button } from "react-native";
 
-function Member(){
+function Member({navigation}){
     return(
         <View>
             <Text>Hello From Member !</Text>
+            <Button title="Detail" 
+            onPress={() => navigation.navigate("MemberDetailScreen")}/>
         </View>
     )
 }
